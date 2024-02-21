@@ -1,6 +1,6 @@
 # Strings are immutable
 a = "!!!Python!! !!!!!!!!! pytho"
-blogHeading = "introduction tO jS"
+heading = "introduction tO cPP"
 str1 = "Welcome to the Console !!!"
 str1 = "Welcome to the Console!!!"
 str1 = "Welcome to the Console !!!"
@@ -9,8 +9,8 @@ str1 = "PythonisaInterpretedLanguage"
 str1 = "Python is a Interpreted Language"
 str1 = "Python is a Interpreted Language"
 str1 = "Python is a Interpreted Language\n"
-str1 = "         "  #using Spacebar
-str2 = "    "  #using Tab
+str1 = "    "  # using Spacebar
+str2 = "    "  # using Tab
 str1 = "Python is a Interpreted Language"
 str2 = "Python is a Interpreted Language"
 str1 = "Python is a Interpreted Language"
@@ -22,9 +22,9 @@ print(a)
 print(a.upper())
 print(a.lower())
 print(a.rstrip("!"))
-print(a.replace("Harry", "John"))
+print(a.replace("Saifullah", "balghari"))
 print(a.split(" "))
-print(blogHeading.capitalize())
+print(heading.capitalize())
 print(len(str1))
 print(len(str1.center(50)))
 print(a.count("Harry"))

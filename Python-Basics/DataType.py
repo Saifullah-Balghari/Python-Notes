@@ -1,9 +1,9 @@
-a = "Python"
-b = 123
-c = complex(2,3)
-d = 1.23
-e = True
-f = None
+a = "Python"        # String
+b = 123             # Integer
+c = complex(2,3)    # Complex Number
+d = 1.23            # Floating Number
+e = True            # Boolen value
+f = None            # None type
 
 print("Type of a is :", type(a))
 print("Type of b is :", type(b))

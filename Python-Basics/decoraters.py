@@ -1,21 +1,26 @@
-
 import time
 import math
- 
-def calculate_time(func):
-     
-    def inner1(*args):
- 
-        begin = time.time()
-         
-        func(*args)
-        end = time.time()
-        print("Total time taken in : ", func.__name__, end - begin)
-    return inner1
- 
-@calculate_time
+
+num = int(input("Enter a number: "))
+
+def start_end(func):
+
+    def wrapper(*args, **kwargs):
+        print("_____The program has started_____")    
+        t1 = time.time()
+        result = func(*args, **kwargs)
+        time.sleep(1)
+        print(f"Answer is {result}")
+        t2 = time.time()
+        t = t2 - t1
+        print(f"The program took {t}")
+        print("______The program has ended______")
+        return result
+    
+    return wrapper
+
+@start_end
 def factorial(num):
- 
-    print(math.factorial(num))
- 
-factorial(5)
+    return math.factorial(num)
+
+factorial(num)

@@ -11,7 +11,6 @@ filter_list = list(filter(lambda x: x>5, list2))
 print(filter_list)
 
 # R E D U C E
-
 from functools import reduce
 
 list3 = [5, 4, 3, 2, 1]
